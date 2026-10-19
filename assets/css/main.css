@@ -205,6 +205,11 @@ h6 {
   background: var(--accent-color);
 }
 
+.header .social-links a.devcredit:hover {
+  background: #00ba66;
+  color: #ffffff;
+}
+
 @media (min-width: 1200px) {
 
   .header~main,
@@ -697,6 +702,37 @@ section,
   line-height: 0;
 }
 
+.about .devcredit-verified-badge {
+  color: #059669;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.2s ease;
+}
+
+.about .devcredit-verified-badge:hover {
+  color: #047857;
+  text-decoration: underline;
+}
+
+.about .about-devcredit-banner {
+  margin-top: 15px;
+}
+
+.about .about-devcredit-banner img.devcredit-badge-img {
+  height: 56px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about .about-devcredit-banner a:hover img.devcredit-badge-img {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 255, 135, 0.25);
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -1015,6 +1051,22 @@ section,
   max-width: 56px;
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio .portfolio-logo-wrap.devcredit-wrap {
+  background: #0d1117;
+  border-color: #30363d;
+}
+
+.portfolio .portfolio-logo-wrap.devcredit-wrap img.devcredit-badge {
+  max-height: 62px;
+  width: auto;
+}
+
+.portfolio .portfolio-card:hover .portfolio-logo-wrap.devcredit-wrap {
+  background: #090d13;
+  border-color: #00FF87;
+  box-shadow: 0 0 16px rgba(0, 255, 135, 0.25);
 }
 
 .portfolio .portfolio-card:hover .portfolio-logo-wrap img {
